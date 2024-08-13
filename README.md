@@ -47,19 +47,29 @@
 
 Оценить корректность работы системы сплитования по проведенному А/А-тесту.
 
+[Ссылка на файл с отчетом](https://github.com/another-rel/m-stanovoy_messenger_and_news_feed_analytics/blob/0274903c4a3f9156ade1832998dcca73be2c0ac4/AA-test_analysis.ipynb)
+
 ### **Задача 4**
 
 Провести анализ данных А/B-теста по внедрению новых алгоритмов рекомендации постов в ленте новостей.
 
+[Ссылка на файл с отчетом](https://github.com/another-rel/m-stanovoy_messenger_and_news_feed_analytics/blob/0274903c4a3f9156ade1832998dcca73be2c0ac4/AB-test_analysis.ipynb)
+
 ### **Задача 5**
 
 Построить ETL-пайплайн для выгрузки данных из ClickHouse, расчета продуктовых метрик по срезам (os, gender, age) и последующему аккумулированию результов в новой таблице.
+
+[Ссылка на файл с кодом](https://github.com/another-rel/m-stanovoy_messenger_and_news_feed_analytics/blob/0274903c4a3f9156ade1832998dcca73be2c0ac4/etl_product_metrics.py)
 
 ### **Задача 6**
 
 Автоматизировать ежедневную отчетность по ключевым метрикам продукта, а именно:
 - Настроить отправку отчета по ключевым метрикам **ленты новостей** за вчера + графики метрик в динамике за прошедшую неделю в общий чат Telegram
 - Настроить отправку отчета по ключевым метрикам **всего продукта** за вчера + графики метрик в динамике за прошедшую неделю в общий чат Telegram
+
+[Ссылка на файл с кодом для отчетности по ленте новостей](https://github.com/another-rel/m-stanovoy_messenger_and_news_feed_analytics/blob/0274903c4a3f9156ade1832998dcca73be2c0ac4/airflow_newsfeed_metrics.py)
+
+[Ссылка на файл с кодом для отчетности по всему продукту](https://github.com/another-rel/m-stanovoy_messenger_and_news_feed_analytics/blob/0274903c4a3f9156ade1832998dcca73be2c0ac4/airflow_full_app_metrics.py)
 
 Скриншоты примеров готовых отчетов в Telegram:
 - Пример готового отчета по ключевым метрикам **ленты новостей** в Telegram
