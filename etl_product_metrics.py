@@ -20,10 +20,10 @@ schedule_interval = '0 7 * * *'
 
 # Задаем параметры подключения к базе ClickHouse
 connection = {
-    'host': 'https://clickhouse.lab.karpov.courses',
-    'password': 'dpo_python_2020',
-    'user': 'student',
-    'database': 'simulator_20240620'
+    'host': '',
+    'password': '',
+    'user': '',
+    'database': ''
 }
 
 @dag(default_args=default_args, schedule_interval=schedule_interval, catchup=False)
