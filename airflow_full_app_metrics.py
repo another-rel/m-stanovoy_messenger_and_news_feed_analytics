@@ -12,10 +12,10 @@ from airflow.operators.python import get_current_context
 
 # Задаем параметры подключения к базе ClickHouse
 connection = {
-    'host': 'https://clickhouse.lab.karpov.courses',
-    'password': 'dpo_python_2020',
-    'user': 'student',
-    'database': 'simulator_20240620'
+    'host': '',
+    'password': '',
+    'user': '',
+    'database': ''
 }
 
 # Устанавливаем параметры по умолчанию для DAG
@@ -32,10 +32,10 @@ schedule_interval = '0 11 * * *'
 
 @dag(default_args=default_args, schedule_interval=schedule_interval, catchup=False)
 def alerts_m_stanovoj_task_2():
-    # chat_id = chat or 484715721 # устанавливаем айди чата
-    chat_id = -938659451
+    # chat_id = chat # устанавливаем айди чата
+    chat_id = 
     
-    my_token = '6345792489:AAGDGiAHJZGu089Yir1DC4882zYkh5BxfJo' # сохраняем токен бота
+    my_token = '' # сохраняем токен бота
     bot = telegram.Bot(token=my_token) # получаем доступ
     
     # Выгружаем агрегированные данные за вчера
